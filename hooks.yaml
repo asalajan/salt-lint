@@ -1,0 +1,11 @@
+---
+
+# For use with pre-commit.
+# See usage instructions at http://pre-commit.com
+
+  - id: salt-lint
+    name: Salt Lint
+    description: Lint Salt files
+    entry: saltlint.py
+    language: python
+    files: \.(sls)$
